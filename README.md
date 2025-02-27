@@ -1,2 +1,2 @@
 # NAITCTF-2025
-ctf for infosec beginners
+This is an official repository with tasks and write-ups from NAITCTF 2025
