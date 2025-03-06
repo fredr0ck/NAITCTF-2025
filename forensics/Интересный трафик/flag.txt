@@ -1,0 +1,1 @@
+NAITCTF{hidden_in_udp_packet}

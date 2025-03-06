@@ -1,0 +1,1 @@
+Терри оказался пастером, он делал TempleOS как дистрибутив ubuntu! Но в чем проблема? Он забыл пароль от учетки, ваша задача найти флаг на устройстве. скачать - https://drive.google.com/file/d/1AmWXPA5YFNvT8hoAF6-hJ7emOH7x0wzm/view?usp=sharing
