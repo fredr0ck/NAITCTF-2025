@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог видеокарт</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>Каталог видеокарт</h1>
+    <div class="products">
+        <div class="product" onclick="location.href='/product?id={{ ids[0] }}'">
+            <img src="{{ image[0] }}" alt="{{ names[0] }}">
+            <h2>{{ names[0] }}</h2>
+            <p>{{ descriptions[0] }}</p>
+            <span class="price">{{ prices[0] }}₽</span>
+        </div>
+        <div class="product" onclick="location.href='/product?id={{ ids[1] }}'">
+            <img src="{{ image[1] }}" alt="{{ names[1] }}">
+            <h2>{{ names[1] }}</h2>
+            <p>{{ descriptions[1] }}</p>
+            <span class="price">{{ prices[1] }}₽</span>
+        </div>
+        <div class="product" onclick="location.href='/product?id={{ ids[2] }}'">
+            <img src="{{ image[2] }}" alt="{{ names[2] }}">
+            <h2>{{ names[2] }}</h2>
+            <p>{{ descriptions[2] }}</p>
+            <span class="price">{{ prices[2] }}₽</span>
+        </div>
+        <div class="product" onclick="location.href='/product?id={{ ids[3] }}'">
+            <img src="{{ image[3] }}" alt="{{ names[3] }}">
+            <h2>{{ names[3] }}</h2>
+            <p>{{ descriptions[3] }}</p>
+            <span class="price">{{ prices[3] }}₽</span>
+        </div>
+    </div>
+
+    <div class="products center-last-3">
+        <div class="product" onclick="location.href='/product?id={{ ids[4] }}'">
+            <img src="{{ image[4] }}" alt="{{ names[4] }}">
+            <h2>{{ names[4] }}</h2>
+            <p>{{ descriptions[4] }}</p>
+            <span class="price">{{ prices[4] }}₽</span>
+        </div>
+        <div class="product" onclick="location.href='/product?id={{ ids[5] }}'">
+            <img src="{{ image[5] }}" alt="{{ names[5] }}">
+            <h2>{{ names[5] }}</h2>
+            <p>{{ descriptions[5] }}</p>
+            <span class="price">{{ prices[5] }}₽</span>
+        </div>
+        <div class="product" onclick="location.href='/product?id={{ ids[6] }}'">
+            <img src="{{ image[6] }}" alt="{{ names[6] }}">
+            <h2>{{ names[6] }}</h2>
+            <p>{{ descriptions[6] }}</p>
+            <span class="price">{{ prices[6] }}₽</span>
+        </div>
+    </div>
+
+</body>
+</html>

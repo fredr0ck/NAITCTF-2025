@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проверка наличия товара</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>Проверка наличия товара</h1>
+
+    <div class="products">
+        {% for name, price, status in zip(names, prices, status) %}
+            <div class="product">
+                <h2>{{ name }}</h2>
+                <p>Цена: {{ price }} ₽</p>
+                <p>Статус: <span class="status {{ 'in-stock' if status == 'В наличии' or status == 'Поздравляем!!!' else 'out-of-stock' if status == 'Нет в наличии' }}">{{ status }}</span></p>
+            </div>
+        {% endfor %}
+    </div>
+
+    <style>
+        .status {
+            font-weight: bold;
+        }
+        .in-stock {
+            color: green;
+        }
+        .out-of-stock {
+            color: red;
+        }
+    </style>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наша крутая компания</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Наши сотрудники</h1>
+    </header>
+    <div class="employees-container">
+        <div class="employee-card" onclick="location.href='/employee?id=1'">
+            <img src="{{ (empl_info[0])['img'] }}">
+            <h2>{{ (empl_info[0])['name'] }}</h2>
+            <p>{{ (empl_info[0])['desc'] }}</p>
+        </div>
+        <div class="employee-card" onclick="location.href='/employee?id=2'">
+            <img src="{{ (empl_info[1])['img'] }}" alt="Менеджер">
+            <h2>{{ (empl_info[1])['name'] }}</h2>
+            <p>{{ (empl_info[1])['desc'] }}</p>
+        </div>
+        <div class="employee-card" onclick="location.href='/employee?id=3'">
+            <img src="{{ (empl_info[2])['img'] }}" alt="Вован">
+            <h2>{{ (empl_info[2])['name'] }}</h2>
+            <p>{{ (empl_info[2])['desc'] }}</p>
+        </div>
+        <div class="employee-card" onclick="location.href='/employee?id=5'">
+            <img src="{{ (empl_info[4])['img'] }}" alt="Тестировщик">
+            <h2>{{ (empl_info[4])['name'] }}</h2>
+            <p>{{ (empl_info[4])['desc'] }}</p>
+        </div>
+        <div class="employee-card" onclick="location.href='/employee?id=6'">
+            <img src="{{ (empl_info[5])['img'] }}" alt="Босс (забрал документы, помогите)">
+            <h2>{{ (empl_info[5])['name'] }}</h2>
+            <p>{{ (empl_info[5])['desc'] }}</p>
+    </div>
+</body>
+</html>

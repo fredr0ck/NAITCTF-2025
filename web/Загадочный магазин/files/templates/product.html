@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru" class="page1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видеокарта: {{ product_name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Отправь свою страничку на конкурс!</h1>
+        
+        <form method="POST" action="{{ url_for('new_page', page_id=page_id) }}">
+            <input type="hidden" name="id" value="{{ page_id }}">
+            <button type="submit">Отправить</button>
+        </form>
+
+        <h2>Содержимое страницы:</h2>
+        <div class="content-box" name="contentp">
+            {{ content | safe }}
+        </div>
+        
+        <a href="/" class="btn">Вернуться на главную</a>
+    </div>
+</body>
+</html>

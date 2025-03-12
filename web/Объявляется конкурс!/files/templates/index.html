@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru" class="index">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конкурс сайтов</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Создай самую лучшую страничку и получи приз!</h1>
+        <p>Начни писать код своей HTML-странички прямо внизу</p>
+        <form method="POST" action="/">
+            <textarea name="query" class="name" value="&lt;!DOCTYPE html&gt;"></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+        <footer>
+            <hr>
+            <p>© 2025 ООО КонкурсСайтов. Все права защищены.</p>
+        </footer>
+    </div>
+</body>
+</html>

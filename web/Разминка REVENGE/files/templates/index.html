@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Секретная страница</title>
+    <style>
+        body {
+            background-color: black;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        h1 {
+            text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+            animation: glitch 1s infinite alternate;
+        }
+
+        @keyframes glitch {
+            0% { text-shadow: 2px 2px #ff0000; }
+            20% { text-shadow: -2px -2px #00ff00; }
+            40% { text-shadow: 2px -2px #0000ff; }
+            60% { text-shadow: -2px 2px #ffff00; }
+            80% { text-shadow: 2px 2px #ff00ff; }
+            100% { text-shadow: -2px -2px #00ffff; }
+        }
+
+        p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        button {
+            background-color: transparent;
+            border: 2px solid #00ff00;
+            color: #00ff00;
+            font-size: 18px;
+            padding: 10px 20px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #00ff00;
+            color: black;
+        }
+
+        .explode {
+            animation: explodeButton 1s forwards;
+        }
+
+        @keyframes explodeButton {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            20% {
+                transform: scale(1.2) rotate(30deg);
+                opacity: 0.8;
+            }
+            40% {
+                transform: scale(1.5) rotate(-30deg);
+                opacity: 0.6;
+            }
+            60% {
+                transform: scale(1.8) rotate(60deg);
+                opacity: 0.4;
+            }
+            80% {
+                transform: scale(2) rotate(-60deg);
+                opacity: 0.2;
+            }
+            100% {
+                transform: scale(3) rotate(90deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<h1>Я пришел отомстить...</h1>
+<p>Тебе никогда не узнать мои секреты</p>
+<div class="default">
+    <div class="basic">
+        <div class="standart_template">
+            <div class="optimization_module">
+                <div class="server-optimize">
+                    <div class="no-info">
+                        <input type="hidden" value="NAITCTF{Ты - лузер =))}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<button id="butt">ПОЛУЧИТЬ ФЛАГ</button>
+<script id="script_main">
+    async function getWindow() {
+        const height = window.innerHeight;
+        const width = window.innerWidth;
+        const res = await fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ height: height, width: width })
+        });
+
+        if (res.status === 400) {
+            document.body.innerHTML = "<div style='position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; background: black; color: red; font-size: 6vw; text-align: center;'><h1>НЕ ДЕЛАЙ ТАК!</h1></div>";
+            return false;
+        }
+        return true;
+    }
+
+    document.addEventListener("DOMContentLoaded", async () => {
+        const isSizeValid = await getWindow();
+        if (!isSizeValid) return;
+
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+
+        setInterval(function() {
+            if (window.innerHeight !== height || window.innerWidth !== width) {
+                document.body.innerHTML = "<div style='position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; background: black; color: red; font-size: 6vw; text-align: center;'><h1>НЕ ЛЕЗЬ ТУДА!</h1></div>";
+                height = window.innerHeight;
+                width = window.innerWidth;
+            }
+        }, 10);
+
+        document.body.addEventListener("touchstart", (e) => {
+            document.body.innerHTML = "<div style='position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; background: black; color: red; font-size: 6vw; text-align: center;'><h1>Выкинь свой телефон!</h1></div>";
+        });
+
+        function cloneButton(button) {
+            button.remove();
+
+            for (let i = 0; i < 3; i++) {
+                let clone = button.cloneNode(true);
+                document.body.appendChild(clone);
+                clone.style.position = "absolute";
+                clone.style.top = `${Math.random() * window.innerHeight}px`;
+                clone.style.left = `${Math.random() * window.innerWidth}px`;
+                clone.addEventListener("mouseover", () => cloneButton(clone));
+            }
+        }
+
+        const btn = document.getElementById("butt");
+        btn.addEventListener("mouseover", () => cloneButton(btn));
+
+        btn.addEventListener('click', function() {
+            this.classList.add('explode');
+            setTimeout(() => {
+                this.style.display = 'none';
+            }, 1000);
+        });
+    });
+</script>
+
+<script async source="https://www.googletagmanager.com/gtag/js?id=UA-512524-65"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+
+    gtag('js', new Date());
+    gtag('config', 'US-512524-65');
+
+</script>
+<!-- <script src="{{ url_for('static', filename='js-analytics.js') }}"></script> -->
+
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+Flask==2.2.5
+Werkzeug==2.2.3
+gunicorn==20.1.0
+python-dotenv
+uuid
+selenium
