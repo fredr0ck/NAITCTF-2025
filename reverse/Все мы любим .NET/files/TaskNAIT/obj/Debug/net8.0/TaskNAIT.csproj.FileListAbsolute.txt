@@ -1,0 +1,14 @@
+C:\Users\Puupk\source\repos\TaskNAIT\TaskNAIT\bin\Debug\net8.0\TaskNAIT.exe
+C:\Users\Puupk\source\repos\TaskNAIT\TaskNAIT\bin\Debug\net8.0\TaskNAIT.deps.json
+C:\Users\Puupk\source\repos\TaskNAIT\TaskNAIT\bin\Debug\net8.0\TaskNAIT.runtimeconfig.json
+C:\Users\Puupk\source\repos\TaskNAIT\TaskNAIT\bin\Debug\net8.0\TaskNAIT.dll
+C:\Users\Puupk\source\repos\TaskNAIT\TaskNAIT\bin\Debug\net8.0\TaskNAIT.pdb
+C:\Users\Puupk\source\repos\TaskNAIT\TaskNAIT\obj\Debug\net8.0\TaskNAIT.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Puupk\source\repos\TaskNAIT\TaskNAIT\obj\Debug\net8.0\TaskNAIT.AssemblyInfoInputs.cache
+C:\Users\Puupk\source\repos\TaskNAIT\TaskNAIT\obj\Debug\net8.0\TaskNAIT.AssemblyInfo.cs
+C:\Users\Puupk\source\repos\TaskNAIT\TaskNAIT\obj\Debug\net8.0\TaskNAIT.csproj.CoreCompileInputs.cache
+C:\Users\Puupk\source\repos\TaskNAIT\TaskNAIT\obj\Debug\net8.0\TaskNAIT.dll
+C:\Users\Puupk\source\repos\TaskNAIT\TaskNAIT\obj\Debug\net8.0\refint\TaskNAIT.dll
+C:\Users\Puupk\source\repos\TaskNAIT\TaskNAIT\obj\Debug\net8.0\TaskNAIT.pdb
+C:\Users\Puupk\source\repos\TaskNAIT\TaskNAIT\obj\Debug\net8.0\TaskNAIT.genruntimeconfig.cache
+C:\Users\Puupk\source\repos\TaskNAIT\TaskNAIT\obj\Debug\net8.0\ref\TaskNAIT.dll
