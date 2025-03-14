@@ -1,0 +1,12 @@
+C:\Users\Puupk\source\repos\Task5Amazing\Task5Amazing\bin\Debug\Task5Amazing.exe.config
+C:\Users\Puupk\source\repos\Task5Amazing\Task5Amazing\bin\Debug\Task5Amazing.exe
+C:\Users\Puupk\source\repos\Task5Amazing\Task5Amazing\bin\Debug\Task5Amazing.pdb
+C:\Users\Puupk\source\repos\Task5Amazing\Task5Amazing\bin\Debug\Guna.UI2.dll
+C:\Users\Puupk\source\repos\Task5Amazing\Task5Amazing\obj\Debug\Task5Amazing.csproj.AssemblyReference.cache
+C:\Users\Puupk\source\repos\Task5Amazing\Task5Amazing\obj\Debug\Task5Amazing.Form1.resources
+C:\Users\Puupk\source\repos\Task5Amazing\Task5Amazing\obj\Debug\Task5Amazing.Properties.Resources.resources
+C:\Users\Puupk\source\repos\Task5Amazing\Task5Amazing\obj\Debug\Task5Amazing.csproj.GenerateResource.cache
+C:\Users\Puupk\source\repos\Task5Amazing\Task5Amazing\obj\Debug\Task5Amazing.csproj.CoreCompileInputs.cache
+C:\Users\Puupk\source\repos\Task5Amazing\Task5Amazing\obj\Debug\Task5Ama.E8DE1E1D.Up2Date
+C:\Users\Puupk\source\repos\Task5Amazing\Task5Amazing\obj\Debug\Task5Amazing.exe
+C:\Users\Puupk\source\repos\Task5Amazing\Task5Amazing\obj\Debug\Task5Amazing.pdb
